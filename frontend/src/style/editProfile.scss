@@ -1,0 +1,21 @@
+.editProfile {
+  .profilePicForm div {
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    #avatar {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+    }
+    label {
+      position: absolute;
+      bottom: 0;
+      right: 35%;
+    }
+    #profilePic {
+      display: none;
+    }
+  }
+}

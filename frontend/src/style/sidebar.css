@@ -1,0 +1,109 @@
+.bestContriDiv,
+.FollowSuggetionDiv {
+  margin: 1rem 0;
+  border: 3px solid #c3cfd9;
+  background-color: #fff;
+  padding-bottom: 1rem;
+  overflow-y: scroll;
+}
+
+.bestContriDiv .avatarDiv,
+.FollowSuggetionDiv .avatarDiv {
+  width: 2rem;
+  height: 2rem;
+}
+
+.bestContriDiv .avatarDiv .avatar,
+.FollowSuggetionDiv .avatarDiv .avatar {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .bestContriDiv,
+  .FollowSuggetionDiv {
+    width: 120%;
+    height: 28vh;
+    overflow-y: scroll;
+  }
+  .bestContriDiv h5,
+  .FollowSuggetionDiv h5 {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+.contributor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.contributor a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contributor a .aboutCreator {
+  font-weight: 700;
+}
+
+.contributor a .aboutCreator .creatorName {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  color: #3b4b58;
+}
+
+.contributor a .aboutCreator p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5rem;
+  color: #2f3e4a;
+}
+
+.suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.suggestion a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.suggestion a .aboutCreator {
+  font-weight: 700;
+}
+
+.suggestion a .aboutCreator .creatorName {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+  color: #3b4b58;
+}
+
+.suggestion a .aboutCreator p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5rem;
+  color: #2f3e4a;
+}
+/*# sourceMappingURL=sidebar.css.map */

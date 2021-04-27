@@ -1,0 +1,217 @@
+nav {
+  display: flex;
+  width: 100%;
+  background-color: hsl(168°, 25%, 65%);
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  height: fit-content;
+}
+
+nav .icon {
+  img {
+    width: 3rem;
+    margin: 0.7rem 0;
+  }
+  cursor: pointer;
+}
+.icon a {
+  text-decoration: none;
+  color: rgb(75, 92, 107);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  margin: 0 0.12rem;
+  position: relative;
+}
+
+nav ul li a {
+  color: rgb(75, 92, 107);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.07rem;
+  padding: 0 0.9rem;
+}
+#profileNavOption {
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  #avatar {
+    margin: 0 0.7rem;
+  }
+}
+nav ul li div {
+  color: rgb(75, 92, 107);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.07rem;
+  padding: 0 0.9rem;
+  cursor: pointer;
+}
+nav ul li:hover div {
+  background-color: hsl(168°, 25%, 80%);
+  color: #000;
+  text-decoration: none;
+}
+nav ul li:hover a {
+  background-color: hsl(168°, 25%, 80%);
+  color: #000;
+  text-decoration: none;
+}
+
+nav .searchBox {
+  display: flex;
+  flex: 0.8;
+  margin: auto 0;
+  height: 2rem;
+  line-height: 2rem;
+}
+nav .searchBox input {
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  background-color: white;
+  padding: 0.2rem 0.3rem;
+  font-size: 1rem;
+  min-width: 15rem;
+  width: 100%;
+}
+
+nav .searchBox .searchIcon {
+  color: black;
+  font-size: 1.4rem;
+  background-color: #fff;
+  height: 100%;
+  // padding: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.4s;
+  border-radius: 0.2rem;
+}
+nav .searchBox .searchIcon:hover {
+  color: white;
+  background-color: red;
+}
+
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+nav .bar .bars,
+nav .bar .close {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+}
+input[type="checkbox"] {
+  appearance: none;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: block;
+    padding-bottom: 1rem;
+    // text-align: start;
+  }
+
+  nav .icon {
+    width: fit-content;
+    margin: 0 auto 0 -3rem;
+    padding: 0rem 2rem;
+  }
+
+  nav .searchBox {
+    // width: 100%;
+    flex: 1;
+    background-color: hsl(168°, 25%, 65%);
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    transition: all 2s linear;
+  }
+  nav ul li {
+    text-align: center;
+    padding: 0.2rem 0;
+  }
+
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 0.75rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+  nav .bar .close {
+    display: none;
+  }
+
+  #check:checked ~ nav .bar .close {
+    display: block;
+  }
+  #check:checked ~ nav .bar .bars {
+    display: none;
+  }
+  #check:checked ~ nav ul {
+    display: flex;
+  }
+}
+
+// making of dropdown
+.dropdown1 {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  right: -2rem;
+  ul {
+    margin-top: 0.5rem;
+    width: fit-content;
+    min-width: 13rem;
+    height: auto;
+    li {
+      width: 100%;
+      height: 3rem;
+      line-height: 3rem;
+      div {
+        background-color: hsl(168°, 25%, 65%);
+        color: rgb(75, 92, 107);
+      }
+    }
+  }
+}
+nav ul li:hover .dropdown1 {
+  display: block;
+  position: absolute;
+  padding: 0;
+  background-color: hsl(168°, 25%, 65%);
+  color: rgb(75, 92, 107);
+}
+
+nav ul li:hover .dropdown1 ul {
+  display: block;
+}
+nav ul li:hover .dropdown1 ul li a {
+  background-color: hsl(168°, 25%, 65%);
+  color: rgb(75, 92, 107);
+}
+
+nav ul li:hover .dropdown1 ul li div {
+  background-color: hsl(168°, 25%, 65%);
+  color: rgb(75, 92, 107);
+  cursor: pointer;
+}

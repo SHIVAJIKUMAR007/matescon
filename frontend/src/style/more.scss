@@ -1,0 +1,14 @@
+.moreVerHidden {
+  position: absolute;
+  //   display: none;
+  padding: 0.8rem 0;
+  width: fit-content;
+  top: 20px;
+  right: 15px;
+  div {
+    padding: 0.4rem 1rem;
+    background-color: hsl(168°, 25%, 80%);
+    cursor: pointer;
+    flex-wrap: nowrap;
+  }
+}

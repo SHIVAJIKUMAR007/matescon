@@ -1,0 +1,43 @@
+.allNotification {
+  border: 3px solid #c3cfd9;
+  background-color: #fff;
+  padding: 0.4rem 1rem;
+  height: 77vh;
+  overflow-y: scroll;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .oneNotification {
+    display: flex;
+    align-items: center;
+    padding-top: 0.7rem;
+    .notificationDetail {
+      padding-left: 1rem;
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .time {
+        font-size: 0.7rem;
+      }
+    }
+    .startFollowing {
+      width: fit-content;
+      margin-left: auto;
+      button {
+        border: none;
+        padding: 0.2rem 0.5rem;
+        outline: none;
+        background-color: hsl(168°, 25%, 65%);
+        color: rgb(75, 92, 107);
+      }
+      button:hover {
+        background-color: hsl(168°, 25%, 80%);
+        color: #000;
+      }
+    }
+  }
+}

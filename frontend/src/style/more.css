@@ -1,0 +1,18 @@
+.moreVerHidden {
+  position: absolute;
+  padding: 0.8rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 20px;
+  right: 15px;
+}
+
+.moreVerHidden div {
+  padding: 0.4rem 1rem;
+  background-color: #bfd9d4;
+  cursor: pointer;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+/*# sourceMappingURL=more.css.map */

@@ -1,0 +1,23 @@
+.signUp .main {
+  margin-top: 3rem;
+}
+
+.signUp .centerDiv {
+  border: 3px solid #c3cfd9;
+  background-color: #fff;
+  width: 100%;
+}
+
+.signUp .collageStatusDiv {
+  border: 1px solid #c3cfd9;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 0.4rem auto;
+}
+
+.signUp .selected {
+  color: #5a5f6b;
+  background-color: #8fbcb3;
+}
+/*# sourceMappingURL=signUp.css.map */

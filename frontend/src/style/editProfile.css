@@ -1,0 +1,23 @@
+.editProfile .profilePicForm div {
+  position: relative;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
+
+.editProfile .profilePicForm div #avatar {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.editProfile .profilePicForm div label {
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+}
+
+.editProfile .profilePicForm div #profilePic {
+  display: none;
+}
+/*# sourceMappingURL=editProfile.css.map */
