@@ -43,14 +43,12 @@ function Post({ postData }) {
       setactivityDetail(activity);
       //isLiked
       const isLike = await (
-        await postService.get(
-          `/like/isLiked/${postData?._id}/${postData?.doerId}`
-        )
+        await postService.get(`/like/isLiked/${postData?._id}/${user?._id}`)
       ).data;
       setisLiked(isLike);
     };
     fetchData();
-  }, [postData, dispatch]);
+  }, [postData, dispatch, user]);
   // fincton to like the post
   async function likeIt() {
     const like = {

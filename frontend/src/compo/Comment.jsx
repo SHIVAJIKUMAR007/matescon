@@ -36,7 +36,7 @@ function Comment({ comment, type, parent }) {
         //isLiked
         const isLike = await (
           await quansService.get(
-            `/comment/isLiked/${comment?._id}/${comment?.doerId}`
+            `/comment/isLiked/${comment?._id}/${user?._id}`
           )
         ).data;
         setisLiked(isLike);
@@ -47,9 +47,7 @@ function Comment({ comment, type, parent }) {
         setactivity(act);
         //isLiked
         const isLike = await (
-          await postService.get(
-            `/like/isLiked/${comment?._id}/${comment?.doerId}`
-          )
+          await postService.get(`/like/isLiked/${comment?._id}/${user?._id}`)
         ).data;
         setisLiked(isLike);
       }
