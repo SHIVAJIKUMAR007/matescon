@@ -1,4 +1,8 @@
 WELCOME TO MATESCON
+
+Created by : Group No. 26
+Members : Shivaji Kumar(2019BCS-058), Parag Poddar(2019BCS-038), Sanket Kumar Dawar (2019BCS-054)
+
 it is a MERN STACK social media website where you can connect with others post images,video,ask quetion,give answers,follow other, chat with others and much more.
 
 github repository : https://github.com/SHIVAJIKUMAR007/matescon.git
